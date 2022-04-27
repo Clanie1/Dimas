@@ -7,16 +7,15 @@
     <title>Dimas</title>
     <link rel="stylesheet" href="./style.css" />
     <link href="./Font/arlrdbd.ttf" rel="stylesheet" />
-    <script
-      src="https://kit.fontawesome.com/64583fa07d.js"
-      crossorigin="anonymous"
-    ></script>
+
     <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
     <script src="./script.js"></script>
   </head>
   <body>
     <nav id="header">
-      <img class="logo" src="./Imagenes/LOGO 1_AZUL.png" class="logo" />
+      <div class="logo">
+        <img src="./Imagenes/LOGO 1_AZUL.png" class="logo" />
+      </div>
       <ul class="header_list">
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Productos</a></li>
@@ -26,7 +25,9 @@
     </nav>
     <div class="banner">
       <div class="banner_container">
-        <img id="banner_image" src="./Imagenes/LOGO 2_VERDE.png" />
+        <div id="banner_image">
+          <img src="./Imagenes/LOGO 2_VERDE.png" />
+        </div>
         <div class="banner_text">
           <h2>Necesitas Imprimir algo?</h2>
           <p>
@@ -44,7 +45,8 @@
         <div class="section_item">
           <lord-icon
             src="https://cdn.lordicon.com/uvextprq.json"
-            trigger="hover"
+            trigger="loop-on-hover"
+            delay="700"
             colors="primary:#ffffff"
             style="width: 150px; height: 150px"
           >
@@ -58,7 +60,8 @@
         <div class="section_item">
           <lord-icon
             src="https://cdn.lordicon.com/wurbjznp.json"
-            trigger="hover"
+            trigger="loop-on-hover"
+            delay="700"
             colors="primary:#ffffff"
             style="width: 150px; height: 150px"
           >
@@ -73,7 +76,8 @@
           <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
           <lord-icon
             src="https://cdn.lordicon.com/xhebrhsj.json"
-            trigger="hover"
+            trigger="loop-on-hover"
+            delay="700"
             colors="primary:#ffffff"
             style="width: 150px; height: 150px"
           >
@@ -96,7 +100,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
               quod unde. Quia deserunt recusandae placeat.
             </p>
-            <a href="#header">Conoce mas</a>
+            <a class="link" href="#header">Conoce mas</a>
           </div>
         </div>
         <div class="sectionTwo_item white shadow">
@@ -107,7 +111,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
               quod unde. Quia deserunt recusandae placeat.
             </p>
-            <a>Conoce mas</a>
+            <a class="link" href="#">Conoce mas</a>
           </div>
         </div>
         <div class="sectionTwo_item white shadow">
@@ -118,7 +122,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
               quod unde. Quia deserunt recusandae placeat.
             </p>
-            <a>Conoce mas</a>
+            <a class="link" href="#">Conoce mas</a>
           </div>
         </div>
         <div class="sectionTwo_item white shadow">
@@ -129,23 +133,30 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
               quod unde. Quia deserunt recusandae placeat.
             </p>
-            <a>Conoce mas</a>
+            <a class="link" href="#">Conoce mas</a>
           </div>
         </div>
       </div>
     </div>
 
     <div class="contactInfo row">
-      <div class="socialMedia">hola</div>
       <div class="cards">
-        <div class="card_item">
-          <div class="card_item_text">
-            <h3>Oscar Barocio Leon</h3>
-            <p>(646) 151 76 39 | obarocio@gmail.com</p>
-            <p>Priv,Encinos 531, Arboleadas III Ensenada, Baja California.</p>
+        <div class="card">
+          <div class="card_container">
+            <div class="card_text blue">
+              <h3>Oscar Barocio Leon</h3>
+              <p>(646) 151 76 39 | obarocio@gmail.com</p>
+              <p>Priv,Encinos 531, Arboleadas III Ensenada, Baja California.</p>
+            </div>
+            <div class="card_bottom">
+              <p>/Productosdimas</p>
+              <div>
+                <img src="./Imagenes/LOGO 1_AZUL.png" />
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card_item">hola</div>
+        <div class="card">hola</div>
       </div>
     </div>
   </body>
