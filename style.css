@@ -13,6 +13,7 @@ body {
   font-family: Arial Rounded MT Bold;
   background-color: white;
   width: 100%;
+  overflow-x: hidden;
 }
 img {
   max-width: 100%;
@@ -21,28 +22,30 @@ img {
 #header {
   display: flex;
   justify-content: space-around;
-  padding: 0px 20px;
   align-items: center;
   width: 100%;
+  min-height: 8vh;
 }
+
 .logo {
-  max-width: 200px;
+  width: 15%;
+  min-width: 200px;
 }
 
 .header_list {
   list-style: none;
   display: flex;
   color: rgb(4, 82, 157);
-  width: 30%;
-  font-size: 20px;
+  width: 40%;
+  font-size: 16px;
   justify-content: space-around;
-  gap: 10px;
 }
 
 .header_list li a {
   text-decoration: none;
   color: rgb(4, 82, 157);
 }
+
 .banner {
   width: 100%;
   background-color: rgb(4, 82, 157);
@@ -68,6 +71,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 26px;
+  text-align: center;
 }
 .banner_text h2 {
   font-size: 2rem;
@@ -201,15 +205,54 @@ img {
 .card_container {
   padding: 1.5em 1.2em;
 }
+#burger {
+  display: none;
+}
+#burger div {
+  background-color: rgb(46, 173, 82);
+  height: 5px;
+  width: 40px;
+  margin: 5px;
+  border-radius: 20px;
+}
 
 @media (max-width: 758px) {
+  .header_list {
+    position: absolute;
+    right: 0;
+    top: 8vh;
+    background-color: white;
+    height: 30vh;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .toggle .slide1 {
+    transition: all 0.5s;
+    transform: translate(5px, 4px) rotate(-45deg);
+  }
+  .toggle .slide3 {
+    transition: all 0.5s;
+    transform: translate(5px, -4px) rotate(45deg);
+  }
+  .toggle .slide2 {
+    display: none;
+  }
+
+  .menu_abierto {
+    transform: translateX(0);
+  }
+  #burger {
+    display: block;
+  }
+
   .banner_container {
     flex-direction: column;
+    align-items: center;
   }
   .section_container {
     flex-direction: column;
-  }
-  .header_list {
-    width: 60%;
   }
 }
