@@ -18,10 +18,10 @@
         <img src="./Imagenes/LOGO 1_AZUL.png" />
       </div>
       <ul class="header_list">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#section_gray">Productos</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a >Inicio</a></li>
+        <li><a onclick="handleScroll('section_gray')">Productos</a></li>
+        <li><a onclick="handleScroll('section')">Servicios</a></li>
+        <li><a onclick="handleScroll('contacto')">Contacto</a></li>
       </ul>
       <div id="burger">
         <div class="slide1"></div>
@@ -31,6 +31,7 @@
     </nav>
 
     <div class="banner">
+
       <div class="banner_container">
         <div id="banner_image">
           <img src="./Imagenes/LOGO 2_VERDE.png" alt="imagen" />
@@ -47,7 +48,7 @@
         </div>
       </div>
     </div>
-    <div class="section">
+    <div id="section">
       <div class="row section_container">
         <div class="section_item">
           <lord-icon
@@ -146,7 +147,7 @@
       </div>
     </div>
 
-    <div class="contactInfo row">
+    <div id="contacto" class="contactInfo row">
       <div class="cards">
         <div class="card">
           <div class="card_container">
@@ -166,6 +167,7 @@
         <div class="card">hola</div>
       </div>
     </div>
+    
 
     <script src="./script.js"></script>
   </body>
