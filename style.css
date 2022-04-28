@@ -16,7 +16,9 @@ body {
 img {
   max-width: 100%;
 }
-
+p {
+  font-family: poppins;
+}
 #header {
   display: flex;
   justify-content: space-around;
@@ -75,13 +77,17 @@ img {
   font-size: 2rem;
   font-weight: bold;
 }
+.banner_text p {
+  font-family: poppins;
+  font-size: 1.3rem;
+}
 
 .btn {
   background-color: rgb(46, 173, 82);
   border: none;
   color: white;
   font-size: 1.3rem;
-  font-family: Arial Rounded MT Bold;
+  font-family: poppins;
   font-weight: lighters;
   padding: 10px 20px;
   border-radius: 2em;
@@ -119,18 +125,18 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  padding: 10px 30px;
+  padding: 20px 30px;
   width: 100%;
 }
-
-.shadow {
-  box-shadow: 5px 3px 10px #888888;
-}
-.sectionTwo_item_text {
+.section_item_text {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 0.5em;
 }
+.section_item_text h3 {
+  font-size: 1.4rem;
+}
+
 .sectionTwo_item {
   display: flex;
   flex-direction: column;
@@ -138,16 +144,17 @@ img {
   gap: 30px;
   padding: 1em 0.5em;
   width: 100%;
+
+  box-shadow: 5px 3px 10px #888888;
+}
+.sectionTwo_item:hover {
+  animation: border 0.2s forwards;
 }
 
 .sectionTwo_item_text h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
   font-weight: bold;
-}
-.sectionTwo_item_text p {
-  font-size: 1rem;
-  font-weight: 50;
 }
 .paddingY {
   padding: 100px 0;
@@ -214,6 +221,15 @@ img {
   border-radius: 20px;
 }
 
+@keyframes border {
+  from {
+    box-shadow: 5px 3px 10px #888888;
+  }
+  to {
+    box-shadow: 0px 0px 5px 4px #888888;
+  }
+}
+
 @media (max-width: 1200px) {
   .header_list {
     width: 50%;
@@ -233,6 +249,12 @@ img {
     width: 40%;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+  }
+  .logo img {
+    height: 100%;
+  }
+  .logo {
+    height: 8vh;
   }
 
   .menu_active {
