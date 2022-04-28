@@ -12,7 +12,6 @@
 body {
   font-family: Arial Rounded MT Bold;
   background-color: white;
-  overflow-x: hidden;
 }
 img {
   max-width: 100%;
@@ -217,19 +216,7 @@ img {
   border-radius: 20px;
 }
 
-@keyframes abrir {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
 @media (max-width: 758px) {
-  body {
-    overflow-x: hidden;
-  }
   .header_list {
     display: none;
     position: absolute;
@@ -244,9 +231,8 @@ img {
     border-bottom-right-radius: 20px;
   }
 
-  .animation {
+  .menu_active {
     display: flex;
-    animation: abrir 0.5s;
   }
 
   .toggle .slide1 {
