@@ -180,6 +180,11 @@ p {
   color: rgb(46, 173, 82);
   text-decoration: none;
 }
+
+#linkAnimation:hover {
+  border-bottom: 1px solid green;
+}
+
 .contactInfo {
   width: 100%;
   padding: 30px 10px;
@@ -227,8 +232,8 @@ p {
 
 #burger div {
   background-color: rgb(46, 173, 82);
-  height: 5px;
-  width: 40px;
+  height: 4px;
+  width: 35px;
   margin: 5px;
   border-radius: 20px;
 }
@@ -290,7 +295,7 @@ p {
   #burger {
     display: block;
     position: absolute;
-    right: 10%;
+    right: 10.5%;
   }
 
   .banner_container {
