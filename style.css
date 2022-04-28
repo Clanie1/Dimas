@@ -23,7 +23,6 @@ img {
   align-items: center;
   width: 100%;
   min-height: 8vh;
-  overflow-x: hidden;
 }
 
 .logo {
@@ -36,9 +35,8 @@ img {
   display: flex;
   color: rgb(4, 82, 157);
   width: 30%;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   justify-content: space-around;
-  overflow-x: hidden;
 }
 
 .header_list li a {
@@ -214,6 +212,12 @@ img {
   width: 40px;
   margin: 5px;
   border-radius: 20px;
+}
+
+@media (max-width: 1200px) {
+  .header_list {
+    width: 50%;
+  }
 }
 
 @media (max-width: 758px) {
