@@ -8,8 +8,21 @@
     <link rel="stylesheet" href="./style.css" />
     <link href="./Font/arlrdbd.ttf" rel="stylesheet" />
     <link rel="stylesheet" href="./Font/Poppins-Regular.ttf" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+    />
 
     <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+    <script
+      src="https://kit.fontawesome.com/64583fa07d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
   </head>
 
   <body>
@@ -47,6 +60,7 @@
         </div>
       </div>
     </div>
+
     <div id="section">
       <div class="row section_container">
         <div class="section_item">
@@ -97,8 +111,8 @@
       </div>
     </div>
 
-    <div id="section_gray">
-      <div class="row section_container paddingY">
+    <div id="section_gray glider-container">
+      <div class="row section_container paddingY glider">
         <div class="sectionTwo_item white">
           <img src="./Imagenes/LOGO 1_AZUL.png" />
           <div class="sectionTwo_item_text blue justify_left">
@@ -107,15 +121,13 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
               quod unde. Quia deserunt recusandae placeat.
             </p>
-            <div id="linkAnimation">
-              <a class="link" href="#header">Conoce mas</a>
-            </div>
+            <a class="link" href="#header">Conoce mas</a>
           </div>
         </div>
         <div class="sectionTwo_item white">
           <img src="./Imagenes/LOGO 1_AZUL.png" alt="logo" />
           <div class="sectionTwo_item_text blue justify_left">
-            <h2>Lonas</h2>
+            <h2>Volantes</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
               quod unde. Quia deserunt recusandae placeat.
@@ -126,7 +138,7 @@
         <div class="sectionTwo_item white">
           <img src="./Imagenes/LOGO 1_AZUL.png" alt="logo" />
           <div class="sectionTwo_item_text blue justify_left">
-            <h2>Lonas</h2>
+            <h2>Vinil Adhesivo</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
               quod unde. Quia deserunt recusandae placeat.
@@ -137,7 +149,7 @@
         <div class="sectionTwo_item white">
           <img src="./Imagenes/LOGO 1_AZUL.png" alt="logo" />
           <div class="sectionTwo_item_text blue justify_left">
-            <h2>Lonas</h2>
+            <h2>Tarjetas de presentación</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
               quod unde. Quia deserunt recusandae placeat.
@@ -146,29 +158,33 @@
           </div>
         </div>
       </div>
+      <button aria-label="Previous" class="glider-prev">«holaaaaaaaaa</button>
+      <button aria-label="Next" class="glider-next">»</button>
+      <div role="tablist" class="dots"></div>
     </div>
 
-    <div id="contacto" class="contactInfo row">
-      <div class="cards">
-        <div class="card">
-          <div class="card_container">
-            <div class="card_text blue">
-              <h3>Oscar Barocio Leon</h3>
-              <p>(646) 151 76 39 | obarocio@gmail.com</p>
-              <p>Priv,Encinos 531, Arboleadas III Ensenada, Baja California.</p>
-            </div>
-            <div class="card_bottom">
-              <p>/Productosdimas</p>
-              <div>
-                <img src="./Imagenes/LOGO 1_AZUL.png" alt="hola" />
-              </div>
-            </div>
-          </div>
+    <footer id="contacto">
+      <div class="contacto_container">
+        <h1>Productos Dimas</h1>
+        <h5>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci,
+          autem atque voluptatem rerum ipsum natus?
+        </h5>
+        <div class="row socialMedia">
+          <a href="">
+            <i class="fa fa-facebook fa-2xl"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-whatsapp fa-2xl"></i>
+          </a>
         </div>
-        <div class="card">hola</div>
+        <h2>+52 646 199 2149</h2>
       </div>
-    </div>
 
+      <div class="footer_footer">
+        PRODUCTOS DIMAS 2022. TODOS LOS DERECHOS RESERVADOS.
+      </div>
+    </footer>
     <script src="./script.js"></script>
   </body>
 </html>

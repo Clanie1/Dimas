@@ -81,6 +81,7 @@ p {
 .banner_text p {
   font-family: poppins;
   font-size: 1.3rem;
+  font-weight: lighter;
 }
 
 .btn {
@@ -134,6 +135,7 @@ p {
   flex-direction: column;
   gap: 0.5em;
 }
+
 .section_item_text h3 {
   font-size: 1.4rem;
 }
@@ -145,7 +147,6 @@ p {
   gap: 30px;
   padding: 1em 1em;
   width: 100%;
-
   box-shadow: 0px 12px 24px -12px rgba(0, 0, 0, 0.5);
 }
 .sectionTwo_item:hover {
@@ -158,9 +159,9 @@ p {
   gap: 10px;
 }
 
-.sectionTwo_item_text h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+.sectionTwo_item_text h2 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
   font-weight: bold;
 }
 .paddingY {
@@ -169,63 +170,80 @@ p {
 
 #section_gray {
   background-color: rgb(239, 241, 247);
+  color: rgb(4, 82, 157);
 }
-.justify_left {
-  text-align: start;
-}
-.white {
+
+/* .white {
   background-color: white;
-}
+} */
 .link {
   color: rgb(46, 173, 82);
   text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding: 3px 0;
 }
-
-#linkAnimation:hover {
-  border-bottom: 1px solid green;
-}
-
-.contactInfo {
+.link:after {
+  content: "";
+  position: absolute;
   width: 100%;
-  padding: 30px 10px;
-  background-color: white;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(4, 82, 157);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
-#contacto {
-  display: flex;
-}
-.card {
-  width: 50%;
-  box-shadow: 0.5px 0.5px 5 px rgb(164, 164, 164);
-  background-color: rgb(239, 241, 247);
-}
-.cards {
-  display: flex;
-  gap: 20px;
-  background-color: white;
+.link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
-.blue {
-  color: rgb(4, 82, 157);
-}
-.card {
+footer {
+  width: 100%;
+  background-color: rgb(4, 82, 157);
+  color: white;
+  padding: 20px 0 0 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 30%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.contacto_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 60%;
+  text-align: center;
+  margin: auto;
 }
 
-.card_bottom {
+.socialMedia {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 10px;
+  align-items: center;
+  width: 20%;
+  gap: 60px;
 }
-.card_bottom div {
-  width: 50%;
+
+.socialMedia a {
+  color: white;
 }
-.card_container {
-  padding: 1.5em 1.2em;
+.socialMedia a:hover {
+  color: rgb(37, 146, 68);
 }
+
+.footer_footer {
+  width: 100%;
+  background-color: rgb(7, 62, 114);
+  padding: 20px 0;
+  font-size: 0.75rem;
+  display: flex;
+  justify-content: center;
+}
+
 #burger {
   display: none;
 }
