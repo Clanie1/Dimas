@@ -153,10 +153,12 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  gap: 20px;
 }
 
 .identidad_img {
-  width: 50%;
+  width: 40%;
+  box-shadow: 4px 2px 13px 0px rgb(7, 62, 114);
 }
 
 .identidad_text {
