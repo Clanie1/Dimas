@@ -178,6 +178,33 @@ p {
   font-size: 1.3rem;
 }
 
+/* Esenada */
+
+.ensenada {
+  width: 100%;
+  display: flex;
+
+  background-image: url(https://lp-cms-production.imgix.net/2019-06/GettyImages-478799313_super.jpg?fit=crop&q=40&sharp=10&vib=20&auto=format&ixlib=react-8.6.4);
+
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ensenada_container {
+  width: 50%;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  background-color: red;
+}
+.ensenada_img {
+  width: 50%;
+}
+
 /* Gray SEction */
 
 .sectionTwo_item {
