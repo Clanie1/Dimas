@@ -183,26 +183,29 @@ p {
 .ensenada {
   width: 100%;
   display: flex;
-
   background-image: url(https://lp-cms-production.imgix.net/2019-06/GettyImages-478799313_super.jpg?fit=crop&q=40&sharp=10&vib=20&auto=format&ixlib=react-8.6.4);
-
-  /* Set a specific height */
   min-height: 300px;
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-x: 80px;
+  background-position-y: 0px;
+  z-index: -1;
 }
 .ensenada_container {
-  width: 50%;
+  width: 80%;
   -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
-  background-color: red;
-}
-.ensenada_img {
-  width: 50%;
+  background-color: rgb(4, 82, 157);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: rgb(212, 212, 212);
+  z-index: 1;
+  justify-content: center;
+  font-size: 1.3rem;
+  padding: 0px 10%;
 }
 
 /* Gray SEction */
