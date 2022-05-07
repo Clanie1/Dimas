@@ -1,10 +1,23 @@
 const app = () => {
   const burger = document.getElementById("burger");
   const menu = document.querySelector(".header_list");
-  console.log(menu.innerHTML);
   burger.addEventListener("click", () => {
     menu.classList.toggle("menu_active");
     burger.classList.toggle("toggle");
+  });
+
+  const more = document.querySelector(".ver_button");
+  const section = document.querySelector(".section_vermas");
+  let flag = false;
+  console.log(section.innerHTML);
+  more.addEventListener("click", () => {
+    section.classList.toggle("option");
+    flag = !flag;
+    if (!flag) {
+      more.innerHTML = "Ver menos";
+    } else {
+      more.innerHTML = "Ver más";
+    }
   });
 };
 app();
