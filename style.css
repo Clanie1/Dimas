@@ -222,9 +222,6 @@ p {
   box-shadow: 0px 12px 24px -12px rgba(0, 0, 0, 0.5);
   color: rgb(4, 82, 157);
 }
-.sectionTwo_item:hover {
-  animation: border 0.2s forwards;
-}
 
 .sectionTwo_item_text {
   display: flex;
@@ -297,7 +294,7 @@ p {
 }
 
 .ver_button {
-  width: 15%;
+  width: 200px;
 }
 
 /* footer */
@@ -428,5 +425,8 @@ footer {
   }
   .ensenada {
     background-position-x: 65%;
+  }
+  .ensenada_container {
+    padding: 25px 20% 25px 8%;
   }
 }

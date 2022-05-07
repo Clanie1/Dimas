@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -32,7 +32,11 @@
       </div>
       <ul class="header_list">
         <li><a>Inicio</a></li>
-        <li><a onclick="handleScroll('section_gray')">Productos</a></li>
+        <li>
+          <a onclick="handleScroll('section_gray')" href="#section_gray"
+            >Productos</a
+          >
+        </li>
         <li><a onclick="handleScroll('section')">Servicios</a></li>
         <li><a onclick="handleScroll('contacto')">Contacto</a></li>
       </ul>
@@ -199,7 +203,7 @@
           </div>
         </div>
       </div>
-      <div class="row section_container section_vermas option">
+      <div class="row section_container section_vermas">
         <div class="sectionTwo_item">
           <img src="./Imagenes/LOGO 1_AZUL.png"alt= />
           <div class="sectionTwo_item_text blue justify_left">
@@ -245,7 +249,7 @@
           </div>
         </div>
       </div>
-      <button class="btn ver_button">Ver mas</button>
+      <button class="btn ver_button">Ver más</button>
     </div>
 
     <footer id="contacto">
@@ -271,6 +275,6 @@
       </div>
     </footer>
 
-    <script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>
