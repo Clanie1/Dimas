@@ -181,7 +181,7 @@ p {
 
 /* Ensenada */
 
-.ensenada {
+#ensenada {
   width: 100%;
   display: flex;
   background-image: url(https://lp-cms-production.imgix.net/2019-06/GettyImages-478799313_super.jpg?fit=crop&q=40&sharp=10&vib=20&auto=format&ixlib=react-8.6.4);
@@ -441,7 +441,7 @@ footer {
     width: 100%;
     order: -1;
   }
-  .ensenada {
+  #ensenada {
     background-position-x: 65%;
   }
   .ensenada_container {
