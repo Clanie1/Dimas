@@ -331,28 +331,32 @@ footer {
   text-align: center;
   margin: auto;
 }
+.contacto_container h2 {
+  font-size: 1rem;
+}
 
-.socialMedia {
+/* .socialMedia {
   display: flex;
   align-items: center;
   width: 20%;
   gap: 60px;
-}
+} */
 
-.socialMedia a {
+/* .socialMedia a {
   color: white;
-}
-.socialMedia a:hover {
+} */
+/* .socialMedia a:hover {
   color: rgb(37, 146, 68);
-}
+} */
 
 .footer_footer {
   width: 100%;
   background-color: rgb(7, 62, 114);
-  padding: 20px 0;
+  padding: 20px 10px;
   font-size: 0.75rem;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 #burger {
