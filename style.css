@@ -202,7 +202,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  color: rgb(212, 212, 212);
+  color: rgb(235, 233, 233);
   z-index: 1;
   justify-content: center;
   font-size: 1.3rem;
@@ -229,6 +229,7 @@ p {
 }
 .sectionTwo_item_img img {
   height: 200px;
+  width: 100%;
   object-fit: cover;
 }
 
